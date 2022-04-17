@@ -11,12 +11,13 @@ pipeline {
             steps
             {
                 sh ' . /etc/environment'
+                 dir("Scientific-Calculator/")
+                {
+                        sh 'mvn clean install'
+                }
             }
-            
-            dir("Scientific-Calculator/")
-            {
-                    sh 'mvn clean install'
-            }
+
+           
         }
         stage('Docker Image')
         {
