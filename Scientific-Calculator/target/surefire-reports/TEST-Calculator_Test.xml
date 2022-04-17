@@ -65,9 +65,9 @@
   <testcase classname="Calculator_Test" name="factorialFalsePositive" time="0.002"/>
   <testcase classname="Calculator_Test" name="square_rootFalsePositive" time="0.001"/>
   <testcase classname="Calculator_Test" name="square_rootTruePositive" time="0"/>
-  <testcase classname="Calculator_Test" name="power_funcTruePositive" time="0"/>
+  <testcase classname="Calculator_Test" name="power_funcTruePositive" time="0.001"/>
   <testcase classname="Calculator_Test" name="factorialTruePositive" time="0"/>
   <testcase classname="Calculator_Test" name="power_funcFalsePositive" time="0"/>
-  <testcase classname="Calculator_Test" name="natural_logTruePositive" time="0.001"/>
+  <testcase classname="Calculator_Test" name="natural_logTruePositive" time="0"/>
   <testcase classname="Calculator_Test" name="natural_logFalsePositive" time="0"/>
 </testsuite>
