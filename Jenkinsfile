@@ -5,7 +5,8 @@ pipeline {
     {
         stage ('Build') {
             steps {
-                sh 'cd ./Scientific-Calculator'
+                sh'. /etc/environment'
+                sh 'cd ./Scientific-Calculator/'
                 sh 'mvn clean install'
             }
         }
