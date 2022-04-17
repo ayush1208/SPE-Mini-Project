@@ -5,9 +5,9 @@ pipeline {
     {
         stage ('Build') {
             steps {
-                sh '. /etc/environment'
-                sh 'cd Scientific-Calculator/'
-                sh 'mvn clean install'
+                sh ''' . /etc/environment
+                cd Scientific-Calculator/
+                mvn clean install'''
             }
         }
         stage('Docker Image')
