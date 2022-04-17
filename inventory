@@ -6,3 +6,4 @@ ansible_ssh_user=ayushvm
 ansible_port=2222
 ansible_ssh_pass=ayush1208
 ansible_sudo_pass=ayush1208
+ansible_connection=ssh
