@@ -31,7 +31,7 @@ pipeline {
         {
             steps{
                 script{
-                    withDockerRegistry(credentialsId: 'c0adbedd-2953-4e4c-99b5-ba2d7e44eb9e', url: 'https://docker.io/ayushmishra1208/scientific-calculator') {
+                    withDockerRegistry(credentialsId: 'c0adbedd-2953-4e4c-99b5-ba2d7e44eb9e') {
                         image.push()
                     }
                 }
