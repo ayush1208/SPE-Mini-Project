@@ -1,0 +1,16 @@
+2022-04-18 14:23:05.565 [main] INFO  Calculator - Factorial of 6 = 720
+2022-04-18 14:23:05.567 [main] INFO  Calculator - Factorial of 3 = 6
+2022-04-18 14:23:05.569 [main] INFO  Calculator - Square root of 7.0 = 2.6457513110645907
+2022-04-18 14:23:05.569 [main] INFO  Calculator - Square root of 4.0 = 2.0
+2022-04-18 14:23:05.569 [main] INFO  Calculator - Square root of 64.0 = 8.0
+2022-04-18 14:23:05.569 [main] INFO  Calculator - Square root of 81.0 = 9.0
+2022-04-18 14:23:05.570 [main] INFO  Calculator - 3.0 powers 4.0 = 81.0
+2022-04-18 14:23:05.570 [main] INFO  Calculator - 2.0 powers 3.0 = 8.0
+2022-04-18 14:23:05.570 [main] INFO  Calculator - Factorial of 5 = 120
+2022-04-18 14:23:05.571 [main] INFO  Calculator - Factorial of 1 = 1
+2022-04-18 14:23:05.571 [main] INFO  Calculator - 2.0 powers 4.0 = 16.0
+2022-04-18 14:23:05.571 [main] INFO  Calculator - 6.0 powers 1.0 = 6.0
+2022-04-18 14:23:05.572 [main] INFO  Calculator - Natural logarithm of 1.0 = 0.0
+2022-04-18 14:23:05.572 [main] INFO  Calculator - Natural logarithm of 1.0 = 0.0
+2022-04-18 14:23:05.572 [main] INFO  Calculator - Natural logarithm of 10.0 = 2.302585092994046
+2022-04-18 14:23:05.572 [main] INFO  Calculator - Natural logarithm of 2.0 = 0.6931471805599453
