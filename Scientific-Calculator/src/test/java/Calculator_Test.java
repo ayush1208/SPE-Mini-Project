@@ -8,8 +8,8 @@ public class Calculator_Test {
     @Test
     public void square_rootTruePositive(){
         double DELTA = 1e-12;
-        assertEquals("Finding square root for True Positive", 8, calculator.square_root(64), DELTA);
-        assertEquals("Finding square root for True Positive", 9, calculator.square_root(81), DELTA);
+        assertEquals("Finding square root for True Positive", 10, calculator.square_root(100), DELTA);
+        assertEquals("Finding square root for True Positive", 11, calculator.square_root(121), DELTA);
     }
 
     @Test
@@ -24,14 +24,14 @@ public class Calculator_Test {
     public void factorialTruePositive(){
         double DELTA = 1e-12;
         assertEquals("Finding factorial of a number for True Positive", 120, calculator.factorial(5), DELTA);
-        assertEquals("Finding factorial of a number for True Positive", 1, calculator.factorial(1), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 720, calculator.factorial(6), DELTA);
     }
 
     @Test
     public void factorialFalsePositive(){
         double DELTA = 1e-12;
-        assertNotEquals("Finding factorial of a number for False Positive", 120, calculator.factorial(6), DELTA);
-        assertNotEquals("Finding factorial of a number for False Positive", 24, calculator.factorial(3), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 5040, calculator.factorial(6), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 24, calculator.factorial(5), DELTA);
     }
 
     @Test
@@ -51,15 +51,15 @@ public class Calculator_Test {
     @Test
     public void power_funcTruePositive(){
         double DELTA = 1e-12;
-        assertEquals("Finding power for True Positive", 81, calculator.power_func(3, 4), DELTA);
         assertEquals("Finding power for True Positive", 8, calculator.power_func(2, 3), DELTA);
+        assertEquals("Finding power for True Positive", 64, calculator.power_func(4, 3), DELTA);
     }
 
     @Test
     public void power_funcFalsePositive(){
         double DELTA = 1e-12;
-        assertNotEquals("Finding power for False Positive", -9, calculator.power_func(2, 4), DELTA);
-        assertNotEquals("Finding power for False Positive", 4, calculator.power_func(6, 1), DELTA);
+        assertNotEquals("Finding power for False Positive", 8, calculator.power_func(2, 4), DELTA);
+        assertNotEquals("Finding power for False Positive", 64, calculator.power_func(4, 2), DELTA);
     }
 
 
