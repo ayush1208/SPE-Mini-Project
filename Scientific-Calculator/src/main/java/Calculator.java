@@ -1,16 +1,20 @@
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calculator
 {
-    static double square_root(double x)
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+
+    public static double square_root(double x)
     {
         double ans = Math.sqrt(x);
+        logger.info("Square root of "+x+" = "+ans);
         System.out.println("Ans = "+ans+"\n");
         System.out.println("");
         return ans;
     }
-    
-    static int factorial(int num){
+    public static int factorial(int num){
         int res = 1;
         if(num<=0)
             res=0;
@@ -19,27 +23,25 @@ public class Calculator
                 res = res*i;
             }
         }
+        logger.info("Factorial of "+num+" = "+res);
         System.out.println("Ans = "+res+"\n");
         System.out.println("");
         return res;
     }
-    
-    static double natural_log(double num){
+    public static double natural_log(double num){
         double res = Math.log(num);
-        
+        logger.info("Natural logarithm of "+num+" = "+res);
         System.out.println("Ans = "+res+"\n");
         System.out.println("");
         return res;
     }
-    
-    static double power_func(double num, double exp){
+    public static double power_func(double num, double exp){
         double res = Math.pow(num,exp);
-        
+        logger.info(num+" powers "+exp+" = "+res);
         System.out.println("Ans = "+res+"\n");
         System.out.println("");
         return res;
     }
-    
     public static void main(String[] args)
     {
         Scanner reader = new Scanner(System.in);
@@ -47,7 +49,6 @@ public class Calculator
         int operation;
         int num_int;
         double num_double,num_x,b;
-
         while(flag==0)
         {
             System.out.println("Enter the operation number \n"+
@@ -56,7 +57,6 @@ public class Calculator
                     "3.Natural Logarithm (base е) \n"+
                     "4.Power Function\n"+
                     "5:Exit\n");
-            
             operation = reader.nextInt();
             if(operation==5)
             {
