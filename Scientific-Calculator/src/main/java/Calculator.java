@@ -9,7 +9,10 @@ public class Calculator
     public static double square_root(double x)
     {
         double square_root = Math.sqrt(x);
-        logger.info("Square root of "+x+" = "+square_root);
+        
+        logger.info("[SQUARE ROOT] "+x);
+        logger.info("[RESULT: SQUARE ROOT] "+square_root);
+
         System.out.println("Square root of "+x+" = "+square_root+"\n");
         System.out.println("");
         return square_root;
@@ -24,21 +27,30 @@ public class Calculator
                 fact=fact*i;
             }
         }
-        logger.info("Factorial of "+x+" = "+fact);
+        
+        logger.info("[FACTORIAL] "+x);
+        logger.info("[RESULT: FACTORIAL] "+fact);
+
         System.out.println("Factorial of "+x+" = "+fact+"\n");
         System.out.println("");
         return fact;
     }
     public static double natural_log(double x){
         double log_val = Math.log(x);
-        logger.info("Natural logarithm of "+x+" = "+log_val);
+        
+        logger.info("[LOG] "+x);
+        logger.info("[RESULT: LOG] "+log_val);
+
         System.out.println("Natural logarithm of "+x+" = "+log_val+"\n");
         System.out.println("");
         return log_val;
     }
     public static double power_func(double a, double b){
         double ans = Math.pow(a,b);
-        logger.info(a+" to the power of "+b+" = "+ans);
+        
+        logger.info("[POWER] "+a+" ^ "+b);
+        logger.info("[RESULT: POWER] "+ans);
+
         System.out.println(a+"to the power of "+b+" = "+ans+"\n");
         System.out.println("");
         return ans;
